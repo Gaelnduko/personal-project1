@@ -1,0 +1,221 @@
+/* Custom CSS Styles for Tin Dog App */
+
+.card-stack {
+    perspective: 1000px;
+  }
+  
+  .profile-card {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform-style: preserve-3d;
+  }
+  
+  .profile-card.swipe-left {
+    transform: translateX(-100%) rotate(-30deg);
+    opacity: 0;
+  }
+  
+  .profile-card.swipe-right {
+    transform: translateX(100%) rotate(30deg);
+    opacity: 0;
+  }
+  
+  .gradient-overlay {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 50%, transparent 100%);
+  }
+  
+  .tin-dog-gradient {
+    background: linear-gradient(45deg, #ff6b35, #f7931e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .tab-active {
+    background: linear-gradient(45deg, #ff6b35, #f7931e);
+    color: white;
+  }
+  
+  .heart-icon,
+  .x-icon {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+  }
+  
+  /* Additional hover effects */
+  .profile-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .swipe-btn {
+    transition: all 0.2s ease;
+  }
+  
+  .swipe-btn:hover {
+    transform: scale(1.1);
+  }
+  
+  .swipe-btn:active {
+    transform: scale(0.95);
+  }
+  
+  /* Custom scrollbar for better mobile experience */
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #fed7aa;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #ff6b35;
+    border-radius: 2px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #e55a2b;
+  }
+  
+  /* Smooth transitions for tab switching */
+  .tab-content {
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Line clamp utility for bio text */
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  /* Mobile-specific adjustments */
+  @media (max-width: 640px) {
+    .profile-card {
+      height: 500px;
+    }
+  
+    .card-stack {
+      max-width: 320px;
+    }
+  }
+  
+  /* Prevent text selection during swipe gestures */
+  .profile-card {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Loading animation for images */
+  .profile-card img {
+    transition: opacity 0.3s ease;
+  }
+  
+  .profile-card img[src=""] {
+    opacity: 0;
+  }
+  
+  /* Focus states for accessibility */
+  .tab-btn:focus {
+    outline: 2px solid #ff6b35;
+    outline-offset: 2px;
+  }
+  
+  .swipe-btn:focus {
+    outline: 2px solid #ff6b35;
+    outline-offset: 2px;
+  }
+  
+  /* Animation for match notification */
+  @keyframes matchPulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .match-animation {
+    animation: matchPulse 0.6s ease-in-out;
+  }
+  
+  /* Paw print animation for loading */
+  @keyframes pawPrint {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  .paw-bounce {
+    animation: pawPrint 2s infinite;
+  }
+  
+  /* Dog-themed color scheme */
+  .bg-dog-orange {
+    background-color: #ff6b35;
+  }
+  
+  .bg-dog-yellow {
+    background-color: #f7931e;
+  }
+  
+  .text-dog-orange {
+    color: #ff6b35;
+  }
+  
+  .text-dog-yellow {
+    color: #f7931e;
+  }
+  
+  .border-dog-orange {
+    border-color: #ff6b35;
+  }
+  
+  /* Special styling for dog breed badges */
+  .breed-badge {
+    background: linear-gradient(45deg, #ff6b35, #f7931e);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+  
+  /* Playful hover effects for dog cards */
+  .dog-card:hover {
+    transform: rotate(1deg) scale(1.02);
+    transition: transform 0.3s ease;
+  }
+  
+  /* Tail wagging animation */
+  @keyframes tailWag {
+    0%,
+    100% {
+      transform: rotate(-5deg);
+    }
+    50% {
+      transform: rotate(5deg);
+    }
+  }
+  
+  .tail-wag {
+    animation: tailWag 0.5s ease-in-out infinite;
+  }
+  
