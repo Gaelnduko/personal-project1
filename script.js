@@ -1,69 +1,22 @@
-// Sample profile data
-const profiles = [
-    {
-      id: 1,
-      name: "Emma",
-      age: 22,
-      bio: "Adventure seeker 🌟 Love hiking, coffee, and good conversations. Looking for someone to explore the city with!",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=600&fit=crop&crop=face",
-      distance: 10,
-      interests: ["Travel", "Coffee", "Hiking", "Photography"],
-    },
-    {
-      id: 2,
-      name: "Alex",
-      age: 28,
-      bio: "Foodie and dog lover 🐕 Always up for trying new restaurants or a weekend getaway.",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=600&fit=crop&crop=face",
-      distance: 5,
-      interests: ["Food", "Dogs", "Music", "Cooking"],
-    },
-    {
-      id: 3,
-      name: "Sarah",
-      age: 24,
-      bio: "Artist by day, Netflix enthusiast by night 🎨 Looking for someone who appreciates creativity and humor.",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=600&fit=crop&crop=face",
-      distance: 3,
-      interests: ["Art", "Movies", "Books", "Yoga"],
-    },
-    {
-      id: 4,
-      name: "Mike",
-      age: 19,
-      bio: "Tech enthusiast and weekend warrior. Love coding, gaming, and outdoor adventures.",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=600&fit=crop&crop=face",
-      distance: 4,
-      interests: ["Technology", "Gaming", "Fitness", "Travel"],
-    },
-    {
-      id: 5,
-      name: "Jessica",
-      age: 30,
-      bio: "Yoga instructor and wellness coach. Seeking balance and meaningful connections.",
-      image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=600&fit=crop&crop=face",
-      distance: 1,
-      interests: ["Yoga", "Wellness", "Nature", "Meditation"],
-    },
-  ]
-  
+
   // Sample dog profile data
   const dogProfiles = [
     {
-      id: 1,
-      name: "Buddy",
-      age: "3 years",
-      breed: "Golden Retriever",
-      bio: "Friendly golden boy who loves fetch and belly rubs! 🎾 Great with kids and other dogs. Looking for a playmate who enjoys long walks and park adventures!",
-      image: "https://images.unsplash.com/photo-1552053831-71594a27632d?w=400&h=600&fit=crop&crop=face",
-      distance: 0.5,
-      interests: ["Fetch", "Swimming", "Treats", "Belly Rubs"],
-      size: "Large",
-      energy: "High",
+  id: 1,
+  name: "Gael",
+  age: "6 years",
+  breed: "chihuahua",
+  bio: "An Elegant beatiful lady who enjoys grooming sessions and gentle walks! 💅 Looking for a refined companion for tea time... I mean treat time!",
+  image: "https://i.pinimg.com/736x/89/30/d5/8930d5e858675a0d1959f0f3eb9846df.jpg",
+  interests: ["Grooming", "swimming", "Treats", "Quiet Time"],
+  distance : 1.8 ,
+  size: "Medium",
+  energy: "very high",
+
     },
     {
       id: 2,
-      name: "tina",
+      name: "Landry",
       age: "2 years",
       breed: "Border Collie",
       bio: "Smart and energetic pup who loves agility training! 🏃‍♀️ Looking for an active companion for hiking and frisbee games.",
@@ -75,7 +28,7 @@ const profiles = [
     },
     {
       id: 3,
-      name: "Max",
+      name: "Shamma",
       age: "5 years",
       breed: "French Bulldog",
       bio: "Chill city dog who enjoys short walks and lots of naps! 😴 Perfect apartment companion looking for a low-key friend.",
@@ -87,7 +40,7 @@ const profiles = [
     },
     {
       id: 4,
-      name: "Bella",
+      name: "Christina",
       age: "4 years",
       breed: "Chihuahua",
       bio: "Sweet rescue pup who loves making new friends! 🐕 Great with children and enjoys beach days and car rides.",
@@ -99,7 +52,7 @@ const profiles = [
     },
     {
       id: 5,
-      name: "Max",
+      name: "michael",
       age: "1 year",
       breed: "Husky",
       bio: "Curious puppy who loves exploring and sniffing everything! 👃 Looking for a patient friend to show me the ropes.",
@@ -111,16 +64,309 @@ const profiles = [
     },
     {
       id: 6,
-      name: "Scooby",
+      name: "Sage",
       age: "6 years",
       breed: "Poodle",
       bio: "Elegant lady who enjoys grooming sessions and gentle walks! 💅 Looking for a refined companion for tea time... I mean treat time!",
-      image: "https://cdn.shopify.com/s/files/1/2456/1591/files/Picture2_lola_our_gsd_480x480.png?v=1645631754",
+      image: "https://i.pinimg.com/736x/9f/62/07/9f6207a86b17f4edefa125002ccc9b7f.jpg",
       distance: 0.3,
       interests: ["Grooming", "Gentle Walks", "Treats", "Quiet Time"],
       size: "Medium",
       energy: "Low",
     },
+    {
+      id: 7,
+      name: "Trevor",
+      age: "3 years",
+      breed: "Golden Retriever",
+      bio: "Friendly golden boy who loves fetch and belly rubs! 🎾 Great with kids and other dogs. Looking for a playmate who enjoys long walks and park adventures!",
+      image: "https://images.unsplash.com/photo-1552053831-71594a27632d?w=400&h=600&fit=crop&crop=face",
+      distance: 0.5,
+      interests: ["Fetch", "Swimming", "Treats", "Belly Rubs"],
+      size: "Large",
+      energy: "High",
+    },
+
+    {
+    
+      id: 8,
+      name: "Scooby",
+      age: "11 years",
+      breed: "Border Collie",
+      bio: "Smart and energetic pup who loves agility training! 🏃‍♀️ Looking for an active companion for hiking and frisbee games.",
+      image: "https://i.pinimg.com/736x/b2/ae/40/b2ae40091e18730921c79241f25e7cff.jpg",
+      distance: 1.2,
+      interests: ["Agility", "Frisbee", "Hiking", "Training"],
+      size: "Medium",
+      energy: "High",
+    },
+    {
+    
+      id: 9,
+      name: "Bruno",
+      age: "6 years",
+      breed: "bull dog",
+      bio: "energetic pup who loves agility training! 🏃‍♀️ Looking for an active companion for hiking and frisbee games.",
+      image: "https://i.pinimg.com/736x/73/70/ee/7370ee413e5ee5ff8793c442e2290625.jpg",
+      distance: 1.2,
+      interests: ["swimming", "Treats", "Hiking", "Training"],
+      size: "Medium",
+      energy: "High",
+    },
+    {
+      id: 10,
+      name: "Reino",
+      age: "15 years",
+      breed: "Golden retriver",
+      bio: "energetic pup who loves agility training! 🏃‍♀️ Looking for an active companion for hiking and frisbee games.",
+      image: "https://i.pinimg.com/736x/8c/58/c6/8c58c6cedb3f9b9ddcb80e6d7cac3241.jpg",
+      distance: 1.7,
+      interests: ["kid", "Treats", "Hiking", "Training"],
+      size: "Medium",
+      energy: "High",
+    },
+    {
+      id: 11,
+      name: "Charlie",
+      age: "9 years",
+      breed: "Chihuahua",
+      bio: "ea curious pup who loves agility training! 🏃‍♀️ Looking for an active companion for hiking and frisbee games.",
+      image: "https://i.pinimg.com/736x/94/9b/7b/949b7bff8d74acc214eaf8db280be880.jpg",
+      distance: 1.3,
+      interests: ["fetching", "Treats", "walking", "Training"],
+      size: "Small",
+      energy: "Very High",
+    },
+    {
+      id: 12,
+      name: "Shark the rapper",
+      age: "2 years",
+      breed: "BullDog",
+      bio: "a confident pup who loves rapping! 🏃‍♀️ Looking for an active companion for hiking and frisbee games.",
+      image: "https://i.pinimg.com/736x/42/dc/6f/42dc6f42d5c0c72d67eecfe82108eac9.jpg",
+      distance: 1.7,
+      interests: ["Music", "rapping", "partying", "Training"],
+      size: "Small",
+      energy: "Very High",
+    },
+    {
+      id: 13,
+      name: "Erduardo",
+      age: "6 years",
+      breed: "Chihuahua",
+      bio: "energetic pup who loves agility training! 🏃‍♀️ Looking for an active companion for hiking and frisbee games.",
+      image: "https://i.pinimg.com/736x/9f/74/da/9f74dae50b165b45408cd9aa54f1f4a5.jpg",
+      distance: 1.5,
+      interests: ["Music", "rapping", "partying", "Training"],
+      size: "Small",
+      energy: "Very High",
+    },
+    {
+      id: 14,
+      name: "Stacy",
+      age: "1 year",
+      breed: "Chihuahua",
+      bio: "energetic pup who loves agility training! 🏃‍♀️ Looking for an active companion for hiking and frisbee games.",
+      image: "https://i.pinimg.com/736x/41/6a/e2/416ae2ef2b383cc63525e1645f96caf5.jpg",
+      distance: 1.5,
+      interests: ["art", "Music", "partying", "Training"],
+      size: "Small",
+      energy: "Very High",
+    },
+    {
+      id: 15,
+      name: "Anna",
+      age: "7 year",
+      breed: "Chihuahua",
+      bio: "energetic pup who loves agility training! 🏃‍♀️ Looking for an active companion for hiking and frisbee games.",
+      image: "https://i.pinimg.com/736x/25/37/e2/2537e243e74d4a10600b8c6ae475cfa6.jpg",
+      distance: 1.5,
+      interests: ["art", "Music", "partying", "Training"],
+      size: "Small",
+      energy: "Very High",
+    },
+    {
+      id: 16,
+      name: "cardi",
+      age: "11 year",
+      breed: "Chihuahua",
+      bio: "energetic pup who loves agility training! 🏃‍♀️ Looking for an active companion for hiking and frisbee games.",
+      image: "https://i.pinimg.com/736x/d4/90/cd/d490cdebcbc2da1e70a70de8fe5a0cc2.jpg",
+      distance: 1.5,
+      interests: ["art", "Music", "partying", "Training"],
+      size: "Small",
+      energy: "Very High",
+    },
+    {
+      id: 17,
+      name: "sky",
+      age: "12 year",
+      breed: "Chihuahua",
+      bio: "energetic pup who loves agility training! 🏃‍♀️ Looking for an active companion for hiking and frisbee games.",
+      image: "https://i.pinimg.com/736x/d5/23/99/d52399cb85c782f6f03eb8ffc919fa4e.jpg",
+      distance: 1.5,
+      interests: ["art", "Music", "partying", "Training"],
+      size: "Small",
+      energy: "Very High",
+    },
+    {
+      id: 18,
+      name: "snoop Dog",
+      age: "9 year",
+      breed: "Chihuahua",
+      bio: "energetic pup who loves agility training! 🏃‍♀️ Looking for an active companion for hiking and frisbee games.",
+      image: "https://i.pinimg.com/736x/95/2a/77/952a776b7978001d7d7ce3b98c409504.jpg",
+      distance: 1.5,
+      interests: ["art", "Music", "partying", "Training"],
+      size: "Small",
+      energy: "Very High",
+    },
+    {
+      id: 19,
+      name: "Oscar",
+      age: "3 year",
+      breed: "Chihuahua",
+      bio: "energetic pup who loves agility training! 🏃‍♀️ Looking for an active companion for hiking and frisbee games.",
+      image: "https://i.pinimg.com/736x/7c/33/2c/7c332ce183edc8051b200a7a86c5d1fb.jpg",
+      distance: 1.5,
+      interests: ["art", "Music", "partying", "Training"],
+      size: "Small",
+      energy: "Very High",
+    },
+    {
+      id: 20,
+      name: "martha",
+      age: "5 year",
+      breed: "Chihuahua",
+      bio: "energetic pup who loves agility training! 🏃‍♀️ Looking for an active companion for hiking and frisbee games.",
+      image: "https://i.pinimg.com/736x/8e/75/e2/8e75e27d3fe8972e1623387fc841454d.jpg",
+      distance: 1.5,
+      interests: ["art", "Music", "partying", "Training"],
+      size: "Small",
+      energy: "Very High",
+    },
+    {
+      id: 21,
+      name: "Amber",
+      age: "7 year",
+      breed: "Chihuahua",
+      bio: "energetic pup who loves agility training! 🏃‍♀️ Looking for an active companion for hiking and frisbee games.",
+      image: "https://i.pinimg.com/736x/e5/3c/bf/e53cbf1dcd3b7827b4c707be0bbdc618.jpg",
+      distance: 1.5,
+      interests: ["art", "Music", "partying", "Training"],
+      size: "Small",
+      energy: "Very High",
+    },
+    {
+      id: 22,
+      name: "Clara",
+      age: "6 year",
+      breed: "Chihuahua",
+      bio: "energetic pup who loves agility training! 🏃‍♀️ Looking for an active companion for hiking and frisbee games.",
+      image: "https://i.pinimg.com/736x/89/ae/03/89ae037e52956bd3277a2dca14563ce3.jpg",
+      distance: 1.5,
+      interests: ["art", "Music", "partying", "Training"],
+      size: "Small",
+      energy: "Very High",
+    },
+    {
+      id: 23,
+      name: "Zack",
+      age: "2 year",
+      breed: "Chihuahua",
+      bio: "energetic pup who loves agility training! 🏃‍♀️ Looking for an active companion for hiking and frisbee games.",
+      image: "https://i.pinimg.com/736x/8e/cb/1f/8ecb1f70322e45004b56931d595f759e.jpg",
+      distance: 1.5,
+      interests: ["art", "Music", "partying", "Training"],
+      size: "Small",
+      energy: "Very High",
+    },
+    {
+      id: 24,
+      name: "cooper",
+      age: "11 year",
+      breed: "Chihuahua",
+      bio: "energetic pup who loves agility training! 🏃‍♀️ Looking for an active companion for hiking and frisbee games.",
+      image: "https://i.pinimg.com/736x/d4/5a/63/d45a63a2b0b1480dc215ff950380e293.jpg",
+      distance: 1.5,
+      interests: ["art", "Music", "partying", "Training"],
+      size: "Small",
+      energy: "Very High",
+    },
+    {
+      id: 25,
+      name: "Luna",
+      age: "7 year",
+      breed: "Chihuahua",
+      bio: "energetic pup who loves agility training! 🏃‍♀️ Looking for an active companion for hiking and frisbee games.",
+      image: "",
+      distance: 1.5,
+      interests: ["art", "Music", "partying", "Training"],
+      size: "Small",
+      energy: "Very High",
+    },
+    {
+      id: 26,
+      name: "charlie",
+      age: "7 year",
+      breed: "Chihuahua",
+      bio: "energetic pup who loves agility training! 🏃‍♀️ Looking for an active companion for hiking and frisbee games.",
+      image: "https://i.pinimg.com/736x/5b/40/bd/5b40bdbe8b8fe41e40eed4cb428c3f80.jpg",
+      distance: 1.5,
+      interests: ["art", "Music", "partying", "Training"],
+      size: "Small",
+      energy: "Very High",
+    },
+    {
+      id: 27,
+      name: "Duke",
+      age: "9 year",
+      breed: "Chihuahua",
+      bio: "energetic pup who loves agility training! 🏃‍♀️ Looking for an active companion for hiking and frisbee games.",
+      image: "https://i.pinimg.com/736x/b8/5e/6d/b85e6d408c005eed35ac67c0a6bf1ac8.jpg",
+      distance: 1.5,
+      interests: ["art", "Music", "partying", "Training"],
+      size: "Small",
+      energy: "Very High",
+    },
+    {
+      id: 28,
+      name: "kate",
+      age: "2 year",
+      breed: "Chihuahua",
+      bio: "energetic pup who loves agility training! 🏃‍♀️ Looking for an active companion for hiking and frisbee games.",
+      image: "https://i.pinimg.com/736x/27/ad/7b/27ad7bf84b4f226842e08e3a33004c89.jpg",
+      distance: 1.5,
+      interests: ["art", "Music", "partying", "Training"],
+      size: "Small",
+      energy: "Very High",
+    },
+    {
+      id: 29,
+      name: "Scott",
+      age: "4 year",
+      breed: "Chihuahua",
+      bio: "energetic pup who loves agility training! 🏃‍♀️ Looking for an active companion for hiking and frisbee games.",
+      image: "https://i.pinimg.com/736x/31/4c/05/314c059480cef9c165c313d2dbc630d8.jpg",
+      distance: 1.5,
+      interests: ["art", "Music", "partying", "Training"],
+      size: "Small",
+      energy: "Very High",
+    },
+    {
+      id: 30,
+      name: "Issabelle",
+      age: "7 year",
+      breed: "Chihuahua",
+      bio: "energetic pup who loves agility training! 🏃‍♀️ Looking for an active companion for hiking and frisbee games.",
+      image: "https://i.pinimg.com/736x/ce/24/40/ce24405b9d0068b15efd5408ef92c9ec.jpg",
+      distance: 1.9,
+      interests: ["art", "Music", "partying", "Training"],
+      size: "Small",
+      energy: "Very High",
+    },
+    
+
   ]
   
   // App state
@@ -141,7 +387,7 @@ const profiles = [
     updateMatchesDisplay()
   }
   
-  // Create profile card HTML
+
   function createProfileCard(profile) {
     return `
           <div class="profile-card absolute inset-0 w-full h-[600px] bg-white rounded-2xl shadow-xl overflow-hidden cursor-pointer" data-profile-id="${profile.id}">
@@ -192,7 +438,7 @@ const profiles = [
       `
   }
   
-  // Create dog profile card HTML
+
   function createDogProfileCard(dog) {
     return `
           <div class="profile-card dog-card absolute inset-0 w-full h-[600px] bg-white rounded-2xl shadow-xl overflow-hidden cursor-pointer" data-profile-id="${dog.id}">
@@ -254,7 +500,7 @@ const profiles = [
       `
   }
   
-  // Get energy level color class
+
   function getEnergyColor(energy) {
     switch (energy) {
       case "Very High":
@@ -270,7 +516,7 @@ const profiles = [
     }
   }
   
-  // Render current profile
+
   function renderCurrentProfile() {
     if (currentProfileIndex >= dogProfiles.length) {
       cardStack.innerHTML = ""
