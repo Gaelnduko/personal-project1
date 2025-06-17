@@ -2,17 +2,16 @@
   // Sample dog profile data
   const dogProfiles = [
     {
-  id: 1,
-  name: "Gael",
-  age: "6 years",
-  breed: "chihuahua",
-  bio: "An Elegant beatiful lady who enjoys grooming sessions and gentle walks! 💅 Looking for a refined companion for tea time... I mean treat time!",
-  image: "https://i.pinimg.com/736x/89/30/d5/8930d5e858675a0d1959f0f3eb9846df.jpg",
-  interests: ["Grooming", "swimming", "Treats", "Quiet Time"],
-  distance : 1.8 ,
-  size: "Medium",
-  energy: "very high",
-
+      id: 1,
+      name: "Gael",
+      age: "6 years",
+      breed: "chihuahua",
+      bio: "An Elegant beatiful lady who enjoys grooming sessions and gentle walks! 💅 Looking for a refined companion for tea time... I mean treat time!",
+      image: "https://i.pinimg.com/736x/89/30/d5/8930d5e858675a0d1959f0f3eb9846df.jpg",
+      interests: ["Grooming", "swimming", "Treats", "Quiet Time"],
+      distance : 1.8 ,
+      size: "Medium",
+      energy: "very high",
     },
     {
       id: 2,
@@ -187,7 +186,7 @@
     },
     {
       id: 16,
-      name: "cardi",
+      name: "Lisa",
       age: "11 year",
       breed: "Chihuahua",
       bio: "energetic pup who loves agility training! 🏃‍♀️ Looking for an active companion for hiking and frisbee games.",
