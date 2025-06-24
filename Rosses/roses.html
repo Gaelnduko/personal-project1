@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roses Collection - BloomCraft</title>
+    <link rel="stylesheet" href="roses-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Floating Petals Background -->
+    <div class="petals-container" id="petalsContainer"></div>
+    
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <svg class="rose-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                </svg>
+                <span class="brand-name">KranianRoses</span>
+            </div>
+            <nav class="nav-menu">
+                <a href="#collection" class="nav-link">Collection</a>
+                <a href="#care" class="nav-link">Care Guide</a>
+                <a href="#varieties" class="nav-link">Varieties</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text" data-aos="fade-up">
+                    <h1 class="hero-title">
+                        <span class="title-line">The Queen of</span>
+                        <span class="title-line gradient-text">All Flowers</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Discover our exquisite collection of premium roses, each bloom carefully selected 
+                        and nurtured to perfection. From classic red roses to rare varieties, 
+                        find the perfect expression of love and beauty.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="50">0</span>
+                            <span class="stat-label">Rose Varieties</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="10000">0</span>
+                            <span class="stat-label">Happy Customers</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="25">0</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" id="exploreBtn">
+                            <span>Explore Collection</span>
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                        <button class="btn btn-outline" id="watchVideoBtn">
+                            <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                            <span>Watch Our Story</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-image" data-aos="fade-left">
+                    <div class="image-container">
+                        <img src="https://i.pinimg.com/736x/af/18/27/af1827b6b8e2ec9f89756d79f53566df.jpg" alt="Beautiful red roses" class="main-image" />
+                        <div class="floating-card card-1">
+                            <div class="card-content">
+                                <span class="card-title">Premium Quality</span>
+                                <span class="card-subtitle">Hand-picked daily</span>
+                            </div>
+                        </div>
+                        <div class="floating-card card-2">
+                            <div class="card-content">
+                                <span class="card-title">Fresh Delivery</span>
+                                <span class="card-subtitle">Same day available</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rose Varieties Section -->
+    <section id="varieties" class="varieties">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Rose Varieties We Offer</h2>
+                <p class="section-subtitle">Each rose tells a unique story of beauty and elegance</p>
+            </div>
+            
+            <div class="varieties-tabs">
+                <button class="tab-btn active" data-tab="classic">Aqua</button>
+                <button class="tab-btn" data-tab="garden">Athena </button>
+                <button class="tab-btn" data-tab="exotic">MoonWalk</button>
+                <button class="tab-btn" data-tab="exotic">Bellerose</button>
+                <button class="tab-btn" data-tab="exotic">Bingo Cerise</button>
+                <button class="tab-btn" data-tab="exotic">Burgundy</button>
+                <button class="tab-btn" data-tab="exotic">Julishka</button>
+            </div>
+
+            <div class="tab-content active" id="classic">
+                <div class="roses-grid">
+                    <div class="rose-card" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="rose-image">
+                            <img src="https://www.kranianfarms.com/wp-content/uploads/2022/08/Aqua.jpg" alt="Red Rose" />
+                            <div class="rose-overlay">
+                                <button class="quick-view-btn">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="rose-info">
+                            <h3 class="rose-name">Aqua</h3>
+                            <p class="rose-description">The timeless symbol of love and passion</p>
+                            <div class="rose-price">ksh600</div>
+                            <div class="rose-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-count">(124)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rose-card" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="rose-image">
+                            <img src="https://images.unsplash.com/photo-1561181286-d3fee7d55364?w=400&h=500&fit=crop&crop=center" alt="White Rose" />
+                            <div class="rose-overlay">
+                                <button class="quick-view-btn">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="rose-info">
+                            <h3 class="rose-name">Athena</h3>
+                            <p class="rose-description">Elegance and purity in perfect harmony</p>
+                            <div class="rose-price">$22.99</div>
+                            <div class="rose-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-count">(98)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rose-card" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="rose-image">
+                            <img src="https://images.unsplash.com/photo-1563241527-3004b7be0ffd?w=400&h=500&fit=crop&crop=center" alt="Pink Rose" />
+                            <div class="rose-overlay">
+                                <button class="quick-view-btn">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="rose-info">
+                            <h3 class="rose-name">MoonWalk</h3>
+                            <p class="rose-description">Gentle beauty with a touch of romance</p>
+                            <div class="rose-price">ksh 900</div>
+                            <div class="rose-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-count">(156)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rose-card" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="rose-image">
+                            <img src="https://images.unsplash.com/photo-1574684891174-df6b02ab38d7?w=400&h=500&fit=crop&crop=center" alt="Yellow Rose" />
+                            <div class="rose-overlay">
+                                <button class="quick-view-btn">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="rose-info">
+                            <h3 class="rose-name">Julishka</h3>
+                            <p class="rose-description">Bright and cheerful, perfect for friendship</p>
+                            <div class="rose-price">ksh1000</div>
+                            <div class="rose-rating">
+                                <span class="stars">★★★★☆</span>
+                                <span class="rating-count">(87)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="garden">
+                <div class="roses-grid">
+                    <div class="rose-card" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="rose-image">
+                            <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=400&h=500&fit=crop&crop=center" alt="Garden Rose" />
+                            <div class="rose-overlay">
+                                <button class="quick-view-btn">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="rose-info">
+                            <h3 class="rose-name">bingo Cerise</h3>
+                            <p class="rose-description">Full-bodied blooms with old-world charm</p>
+                            <div class="rose-price">$32.99</div>
+                            <div class="rose-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-count">(203)</span>
+                            </div>
+                            <div class="rose-info">
+                            <h3 class="rose-name">bingo Cerise</h3>
+                            <p class="rose-description">Full-bodied blooms with old-world charm</p>
+                            <div class="rose-price">$32.99</div>
+                            <div class="rose-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-count">(203)</span>
+                            </div>
+                            <div class="rose-info">
+                            <h3 class="rose-name">bingo Cerise</h3>
+                            <p class="rose-description">Full-bodied blooms with old-world charm</p>
+                            <div class="rose-price">$32.99</div>
+                            <div class="rose-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-count">(203)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rose-card" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="rose-image">
+                            <img src="https://images.unsplash.com/photo-1597848212624-e6ec2d17524e?w=400&h=500&fit=crop&crop=center" alt="Peach Rose" />
+                            <div class="rose-overlay">
+                                <button class="quick-view-btn">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="rose-info">
+                            <h3 class="rose-name">Peach Garden Rose</h3>
+                            <p class="rose-description">Soft peach tones with ruffled petals</p>
+                            <div class="rose-price">$29.99</div>
+                            <div class="rose-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-count">(167)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="exotic">
+                <div class="roses-grid">
+                    <div class="rose-card" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="rose-image">
+                            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=500&fit=crop&crop=center" alt="Black Rose" />
+                            <div class="rose-overlay">
+                                <button class="quick-view-btn">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="rose-info">
+                            <h3 class="rose-name">Midnight Black Rose</h3>
+                            <p class="rose-description">Rare and mysterious, deep burgundy-black</p>
+                            <div class="rose-price">$45.99</div>
+                            <div class="rose-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-count">(89)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rose-card" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="rose-image">
+                            <img src="https://images.unsplash.com/photo-1561181286-d3fee7d55364?w=400&h=500&fit=crop&crop=center" alt="Blue Rose" />
+                            <div class="rose-overlay">
+                                <button class="quick-view-btn">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="rose-info">
+                            <h3 class="rose-name">Mystic Blue Rose</h3>
+                            <p class="rose-description">Enchanting blue hues, truly one-of-a-kind</p>
+                            <div class="rose-price">$52.99</div>
+                            <div class="rose-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-count">(76)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Rose Care Guide -->
+    <section id="care" class="care-guide">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Rose Care Guide</h2>
+                <p class="section-subtitle">Keep your roses blooming beautifully with our expert tips</p>
+            </div>
+
+            <div class="care-content">
+                <div class="care-steps">
+                    <div class="step-item active" data-step="1" data-aos="fade-right" data-aos-delay="100">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Proper Watering</h3>
+                            <p>Water at the base of the plant, avoiding the leaves to prevent disease</p>
+                        </div>
+                    </div>
+                    <div class="step-item" data-step="2" data-aos="fade-right" data-aos-delay="200">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Sunlight Requirements</h3>
+                            <p>Ensure 6-8 hours of direct sunlight daily for optimal growth</p>
+                        </div>
+                    </div>
+                    <div class="step-item" data-step="3" data-aos="fade-right" data-aos-delay="300">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Pruning Techniques</h3>
+                            <p>Regular pruning promotes healthy growth and abundant blooms</p>
+                        </div>
+                    </div>
+                    <div class="step-item" data-step="4" data-aos="fade-right" data-aos-delay="400">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Fertilization</h3>
+                            <p>Feed monthly during growing season with rose-specific fertilizer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="care-visual" data-aos="fade-left">
+                    <div class="care-image-container">
+                        <img src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?w=500&h=600&fit=crop&crop=center" alt="Rose care" class="care-image active" data-image="1" />
+                        <img src="https://images.unsplash.com/photo-1563241527-3004b7be0ffd?w=500&h=600&fit=crop&crop=center" alt="Rose sunlight" class="care-image" data-image="2" />
+                        <img src="https://images.unsplash.com/photo-1561181286-d3fee7d55364?w=500&h=600&fit=crop&crop=center" alt="Rose pruning" class="care-image" data-image="3" />
+                        <img src="https://images.unsplash.com/photo-1574684891174-df6b02ab38d7?w=500&h=600&fit=crop&crop=center" alt="Rose fertilizer" class="care-image" data-image="4" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rose Collection Showcase -->
+    <section id="collection" class="collection-showcase">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Featured Collection</h2>
+                <p class="section-subtitle">Handpicked arrangements for every special moment</p>
+            </div>
+
+            <div class="collection-grid">
+                <div class="collection-item large" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="collection-image">
+                        <img src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?w=600&h=800&fit=crop&crop=center" alt="Rose Bouquet" />
+                        <div class="collection-overlay">
+                            <div class="collection-content">
+                                <h3>Romantic Bouquet</h3>
+                                <p>12 Premium Red Roses</p>
+                                <span class="price">$89.99</span>
+                                <button class="btn btn-white">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="collection-item" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="collection-image">
+                        <img src="https://images.unsplash.com/photo-1563241527-3004b7be0ffd?w=400&h=500&fit=crop&crop=center" alt="Pink Roses" />
+                        <div class="collection-overlay">
+                            <div class="collection-content">
+                                <h3>Pink Elegance</h3>
+                                <p>6 Pink Garden Roses</p>
+                                <span class="price">$65.99</span>
+                                <button class="btn btn-white">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="collection-item" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="collection-image">
+                        <img src="https://images.unsplash.com/photo-1561181286-d3fee7d55364?w=400&h=500&fit=crop&crop=center" alt="White Roses" />
+                        <div class="collection-overlay">
+                            <div class="collection-content">
+                                <h3>Pure White</h3>
+                                <p>9 White Premium Roses</p>
+                                <span class="price">$75.99</span>
+                                <button class="btn btn-white">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="collection-item" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="collection-image">
+                        <img src="https://images.unsplash.com/photo-1574684891174-df6b02ab38d7?w=400&h=500&fit=crop&crop=center" alt="Mixed Roses" />
+                        <div class="collection-overlay">
+                            <div class="collection-content">
+                                <h3>Rainbow Mix</h3>
+                                <p>12 Mixed Color Roses</p>
+                                <span class="price">$95.99</span>
+                                <button class="btn btn-white">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content" data-aos="fade-up">
+                <h2 class="newsletter-title">Stay in Bloom</h2>
+                <p class="newsletter-subtitle">Get exclusive rose care tips and special offers delivered to your inbox</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <div class="form-group">
+                        <input type="email" placeholder="Enter your email address" class="newsletter-input" required>
+                        <button type="submit" class="btn btn-primary">
+                            <span>Subscribe</span>
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <svg class="rose-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                        <span class="brand-name">BloomCraft Roses</span>
+                    </div>
+                    <p class="footer-description">
+                        Specializing in premium roses since 1999. Every bloom tells a story of love, beauty, and craftsmanship.
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#collection">Rose Collection</a></li>
+                        <li><a href="#varieties">Varieties</a></li>
+                        <li><a href="#care">Care Guide</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section" id="contact">
+                    <h3 class="footer-title">Contact Info</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span>📞 (555) ROSE-123</span>
+                        </div>
+                        <div class="contact-item">
+                            <span>✉️ roses@bloomcraft.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <span>📍 Rose Garden District</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 BloomCraft Roses. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="roses-script.js"></script>
+</body>
+</html>
